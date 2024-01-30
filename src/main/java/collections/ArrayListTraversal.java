@@ -15,21 +15,4 @@ public class ArrayListTraversal {
             System.out.println(fruit);
         }
     }
-
-    public static void main(String[] args) {
-        // Example usage
-        ArrayList<String> fruits = new ArrayList<>();
-        fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Orange");
-        fruits.add("Grapes");
-
-        ArrayListTraversal arrayListTraversal = new ArrayListTraversal();
-
-        System.out.println("Traversing using for loop:");
-        arrayListTraversal.traverseWithForLoop(fruits);
-
-        System.out.println("\nTraversing using enhanced for loop:");
-        arrayListTraversal.traverseWithEnhancedForLoop(fruits);
-    }
 }

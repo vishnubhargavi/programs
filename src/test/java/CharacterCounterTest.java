@@ -1,4 +1,4 @@
-package maps;
+import maps.charactercounter;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,6 +6,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 public class CharacterCounterTest {
+
+    private maps.charactercounter charactercounter;
 
     @Test
     public void testPositiveResponse() {
@@ -41,7 +43,7 @@ public class CharacterCounterTest {
         System.setOut(printStream);
 
         // Capture the output
-        CharacterCounter.countCharacters(input);
+        maps.charactercounter.countCharacters(input);
 
         // Reset System.out
         System.out.flush();
